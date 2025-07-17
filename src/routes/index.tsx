@@ -4,6 +4,8 @@ import { ProfilePage } from "../features/profile";
 import { ContactPage } from "../features/contact";
 import { RootLayout } from "@/layouts/root";
 import { DocumentationPage } from "@/features/documentation";
+import { UserPage } from "@/features/user";
+import { OwnerPage } from "@/features/owner";
 
 export const AppRouter = createBrowserRouter([
   {
@@ -25,6 +27,14 @@ export const AppRouter = createBrowserRouter([
       {
         path: "documentation", // otomatis menjadi "/contact"
         element: <DocumentationPage />,
+      },
+      {
+        path: "/users", // otomatis menjadi "/contact"
+        element: <UserPage />,
+      },
+      {
+        path: "/owners", // otomatis menjadi "/contact"
+        element: <OwnerPage />,
       },
     ],
   },
