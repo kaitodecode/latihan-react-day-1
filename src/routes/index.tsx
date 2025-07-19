@@ -6,6 +6,8 @@ import { RootLayout } from "@/layouts/root";
 import { DocumentationPage } from "@/features/documentation";
 import { UserPage } from "@/features/user";
 import { OwnerPage } from "@/features/owner";
+import { StudentPage } from "@/features/students";
+import { TrainerPage } from "@/features/trainer/view";
 
 export const AppRouter = createBrowserRouter([
   {
@@ -36,6 +38,14 @@ export const AppRouter = createBrowserRouter([
         path: "/owners", // otomatis menjadi "/contact"
         element: <OwnerPage />,
       },
+      {
+        path: "/trainers", // otomatis menjadi "/contact"
+        element: <TrainerPage />,
+      },
+      {
+        path: "/students",
+        element: <StudentPage/>
+      }
     ],
   },
 ]);

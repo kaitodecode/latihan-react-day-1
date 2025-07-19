@@ -105,7 +105,7 @@ export const DataUser = () => {
     };
 
     const handlePerRowsChange = async (newPerPage: number, page: number) => {
-        setPerPage(newPerPage);
+        setPerPage(newPerPage);`1221 `
         fetchUsers(page, newPerPage);
     };
 

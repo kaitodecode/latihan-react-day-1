@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 export const HomePage = () => {
     const [counter, setCounter] = useState(0);
@@ -25,6 +25,10 @@ export const HomePage = () => {
         }
     };
 
+    useEffect(()=>{
+        setTheme(theme === 'light' ? 'dark' : 'light')
+    },[counter])
+
 
     const currentTheme = themeStyles[theme as keyof typeof themeStyles];
 
@@ -44,6 +48,12 @@ export const HomePage = () => {
                             className={`${currentTheme.button} px-4 py-2 rounded`}
                         >
                             Increment
+                        </button>
+                        <button
+                            onClick={() => setCounter(prev => prev - 1)}
+                            className={`${currentTheme.button} px-4 py-2 rounded`}
+                        >
+                            Decrement
                         </button>
                     </div>
 

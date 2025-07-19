@@ -1,0 +1,1 @@
+import {TrainerPage} from "./view"
