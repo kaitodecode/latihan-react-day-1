@@ -7,7 +7,7 @@ export const TrainerReduxPage = () => {
             <div className="max-w-7xl mx-auto">
                 <div className="text-center mb-12">
                     <h2 className="text-4xl font-bold text-indigo-900 tracking-tight">
-                        Trainer List
+                        Trainer Redux List
                     </h2>
                     <p className="mt-3 text-xl text-indigo-600 font-medium">
                         List Trainer from Database
